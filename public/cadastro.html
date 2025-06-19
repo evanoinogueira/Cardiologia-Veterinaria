@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Cardiologia Veterinária</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div>🐶Cardiologia Veterinária</div>
+        <div>
+            <a href="/">Início</a>
+            <a href="/servicos">Serviços</a>
+            <a href="/sobre">Sobre</a>
+            <a href="/contato">Contato</a>
+            <a href="/login">Login</a>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    
+    <h1>Cadastro de Usuário</h1>
+    
+    <form action="/cadastrar" method="POST">
+        <label>Nome:</label><br>
+        <input type="text" name="nome" required><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br>
+        <label>Senha:</label><br>
+        <input type="password" name="senha" required><br>
+
+        <button type="submit">Cadastrar</button>
+        <img src="/imagens/cadastro.png" alt="Cadastro" class="img-principal">
+    </form>
+</div>
+
+<footer>
+    © 2025 Cardiologia Veterinária.
+</footer>
+
+</body>
+</html>

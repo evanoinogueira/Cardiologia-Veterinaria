@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcação - Cardiologia Veterinária</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div>🐶 Cardiologia Veterinária</div>
+        <div>
+            <a href="/">Início</a>
+            <a href="/servicos">Serviços</a>
+            <a href="/sobre">Sobre</a>
+            <a href="/contato">Contato</a>
+            <a href="/logout">Sair</a>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Marcar Consulta ou Exame</h1>
+    <form action="/agendar" method="POST">
+        <label>Nome do Pet:</label><br>
+        <input type="text" name="nomePet" required><br>
+
+        <label>Tipo:</label><br>
+        <select name="tipo" required>
+            <option value="Consulta">Consulta</option>
+            <option value="Ultrassom">Ultrassom</option>
+            <option value="Ecocardiograma">Ecocardiograma</option>
+            <option value="Radiografia">Radiografia</option>
+        </select><br><br>
+
+        <label>Data:</label><br>
+        <input type="date" name="data" required><br>
+
+        <label>Horário:</label><br>
+        <input type="time" name="horario" required><br><br>
+
+        <button type="submit">Agendar</button>
+    </form>
+</div>
+
+<footer>
+    © 2025 Cardiologia Veterinária.
+</footer>
+
+</body>
+</html>

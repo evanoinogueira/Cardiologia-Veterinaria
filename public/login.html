@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Cardiologia Veterinária</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div>🐶 Cardiologia Veterinária</div>
+        <div>
+            <a href="/">Início</a>
+            <a href="/servicos">Serviços</a>
+            <a href="/sobre">Sobre</a>
+            <a href="/contato">Contato</a>
+            <a href="/cadastro">Cadastro</a>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Login</h1>
+    
+    <form action="/logar" method="POST">
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br>
+
+        <label>Senha:</label><br>
+        <input type="password" name="senha" required><br>
+
+        <button type="submit">Entrar</button>
+        <img src="/imagens/login.png" alt="Login" class="img-principal">
+    </form>
+</div>
+
+<footer>
+    © 2025 Cardiologia Veterinária.
+</footer>
+
+</body>
+</html>
